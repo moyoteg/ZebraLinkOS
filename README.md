@@ -11,7 +11,7 @@ Zebra ship their iOS SDK as an **XCFramework**. Wrapping it in a Swift Package g
 | Benefit | Details |
 |---------|---------|
 | **One‑line install** | Xcode resolves and caches the dependency. |
-| **CI‑friendly** | Works out‑of‑the‑box with GitHub Actions, Bitrise, Xcode Cloud, etc. |
+| **CI‑friendly** | Works out‑of‑the-box with GitHub Actions, Bitrise, Xcode Cloud, etc. |
 | **Clear versioning** | Git tags (`1.0.0`, `1.1.0` …) track SDK upgrades. |
 | **Autocomplete out of the box** | Public headers are embedded; Swift’s Clang importer exposes the APIs automatically. |
 
@@ -69,7 +69,6 @@ let package = Package(
         .target(
             name: "MyAwesomeLib",
             dependencies: [
-                // Reference the product here
                 .product(name: "ZebraLinkOS", package: "ZebraLinkOS")
             ]
         )
@@ -91,15 +90,6 @@ Run `swift build` and you’re done — your library can now `import ZebraLinkOS
 
 ---
 
-## 🔑 Entitlements & Info.plist
-
-| Connection | Add to Info.plist |
-|-----------|-------------------|
-| **Wi‑Fi / Ethernet** | `NSLocalNetworkUsageDescription` |
-| **MFi Bluetooth** | `NSBluetoothAlwaysUsageDescription` **and** an MFi Accessory entitlement |
-
----
-
 ## 📄 License
 
-This package bundles Zebra’s Link‑OS SDK under the Zebra Technologies **End‑User License Agreement**.  See [`LICENSE`](LICENSE) for full terms.
+This package bundles Zebra’s Link‑OS SDK under Zebra Technologies **End‑User License Agreement**. See [`LICENSE`](LICENSE) for full terms.

@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "ZebraLinkOS",
     platforms: [
-        .iOS("17.0")
+        .iOS(.v13)
     ],
     products: [
         .library(

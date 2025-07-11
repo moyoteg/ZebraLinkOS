@@ -1,5 +1,5 @@
 framework module ZebraLinkOS {
-    umbrella "Headers"
-    export *
-    module * { export * }
+  umbrella "Headers"
+  export *
+  module * { export * }
 }
